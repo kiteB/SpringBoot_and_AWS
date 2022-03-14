@@ -1,4 +1,4 @@
-package com.yeonju.book.web.domain.posts;
+package com.yeonju.book.web.domain.post;
 
 import com.yeonju.book.web.domain.BaseTimeEntity;
 import lombok.Builder;

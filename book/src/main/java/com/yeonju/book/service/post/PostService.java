@@ -1,13 +1,17 @@
-package com.yeonju.book.service.posts;
+package com.yeonju.book.service.post;
 
-import com.yeonju.book.web.domain.posts.Post;
-import com.yeonju.book.web.domain.posts.PostRepository;
+import com.yeonju.book.web.domain.post.Post;
+import com.yeonju.book.web.domain.post.PostRepository;
+import com.yeonju.book.web.dto.PostListResponseDto;
 import com.yeonju.book.web.dto.PostResponseDto;
 import com.yeonju.book.web.dto.PostSaveRequestDto;
 import com.yeonju.book.web.dto.PostUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Service
@@ -35,6 +39,13 @@ public class PostService {
                 .orElseThrow(() -> new IllegalArgumentException("해당 게시글이 없습니다. id = " + id));
 
         return new PostResponseDto(entity);
+    }
+
+    @Transactional
+    public List<PostListResponseDto> findAllDesc() {
+        return postRepository.findAllDesc().stream()
+                .map(PostListResponseDto::new)
+                .collect(Collectors.toList());
     }
 
 }

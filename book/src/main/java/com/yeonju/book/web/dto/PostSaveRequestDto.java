@@ -1,6 +1,6 @@
 package com.yeonju.book.web.dto;
 
-import com.yeonju.book.web.domain.posts.Post;
+import com.yeonju.book.web.domain.post.Post;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

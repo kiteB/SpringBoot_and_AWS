@@ -3,18 +3,20 @@ package com.yeonju.book.web.dto;
 import com.yeonju.book.web.domain.post.Post;
 import lombok.Getter;
 
+import java.time.LocalDateTime;
+
 @Getter
-public class PostResponseDto {
+public class PostListResponseDto {
 
     private Long id;
     private String title;
-    private String content;
     private String author;
+    private LocalDateTime modifiedDate;
 
-    public PostResponseDto(Post entity) {
+    public PostListResponseDto(Post entity) {
         this.id = entity.getId();
         this.title = entity.getTitle();
-        this.content = entity.getContent();
         this.author = entity.getAuthor();
+        this.modifiedDate = entity.getModifiedDate();
     }
 }

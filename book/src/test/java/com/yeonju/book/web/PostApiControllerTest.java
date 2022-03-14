@@ -1,10 +1,9 @@
 package com.yeonju.book.web;
 
-import com.yeonju.book.web.domain.posts.Post;
-import com.yeonju.book.web.domain.posts.PostRepository;
+import com.yeonju.book.web.domain.post.Post;
+import com.yeonju.book.web.domain.post.PostRepository;
 import com.yeonju.book.web.dto.PostSaveRequestDto;
 import com.yeonju.book.web.dto.PostUpdateRequestDto;
-import org.assertj.core.api.Assertions;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;

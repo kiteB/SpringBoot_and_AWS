@@ -41,7 +41,7 @@ public class PostService {
         return new PostResponseDto(entity);
     }
 
-    @Transactional
+    @Transactional(readOnly = true)
     public List<PostListResponseDto> findAllDesc() {
         return postRepository.findAllDesc().stream()
                 .map(PostListResponseDto::new)

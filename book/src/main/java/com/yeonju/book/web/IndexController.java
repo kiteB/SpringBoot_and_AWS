@@ -1,5 +1,6 @@
 package com.yeonju.book.web;
 
+import com.yeonju.book.config.auth.LoginUser;
 import com.yeonju.book.config.auth.dto.SessionUser;
 import com.yeonju.book.service.post.PostService;
 import com.yeonju.book.web.dto.PostResponseDto;
@@ -16,12 +17,10 @@ import javax.servlet.http.HttpSession;
 public class IndexController {
 
     private final PostService postService;
-    private final HttpSession httpSession;
 
     @GetMapping("/")
-    public String index(Model model) {
+    public String index(Model model, @LoginUser SessionUser user) {
         model.addAttribute("post", postService.findAllDesc());
-        SessionUser user = (SessionUser) httpSession.getAttribute("user");
 
         if (user != null) {
             model.addAttribute("userName", user.getName());

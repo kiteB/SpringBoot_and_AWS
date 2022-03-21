@@ -1,4 +1,4 @@
-package com.yeonju.book.web.domain.user;
+package com.yeonju.book.domain.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

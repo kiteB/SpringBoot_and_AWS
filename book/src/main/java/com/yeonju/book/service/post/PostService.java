@@ -1,7 +1,7 @@
 package com.yeonju.book.service.post;
 
-import com.yeonju.book.web.domain.post.Post;
-import com.yeonju.book.web.domain.post.PostRepository;
+import com.yeonju.book.domain.post.Post;
+import com.yeonju.book.domain.post.PostRepository;
 import com.yeonju.book.web.dto.PostListResponseDto;
 import com.yeonju.book.web.dto.PostResponseDto;
 import com.yeonju.book.web.dto.PostSaveRequestDto;

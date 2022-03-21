@@ -2,8 +2,8 @@ package com.yeonju.book.config.auth;
 
 import com.yeonju.book.config.auth.dto.OAuthAttributes;
 import com.yeonju.book.config.auth.dto.SessionUser;
-import com.yeonju.book.web.domain.user.User;
-import com.yeonju.book.web.domain.user.UserRepository;
+import com.yeonju.book.domain.user.User;
+import com.yeonju.book.domain.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;

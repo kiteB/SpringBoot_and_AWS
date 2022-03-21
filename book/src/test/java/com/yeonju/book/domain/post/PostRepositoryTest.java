@@ -1,4 +1,4 @@
-package com.yeonju.book.web.domain.post;
+package com.yeonju.book.domain.post;
 
 import org.junit.After;
 import org.junit.Test;

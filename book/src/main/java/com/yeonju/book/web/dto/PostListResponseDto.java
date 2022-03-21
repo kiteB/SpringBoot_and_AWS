@@ -1,6 +1,6 @@
 package com.yeonju.book.web.dto;
 
-import com.yeonju.book.web.domain.post.Post;
+import com.yeonju.book.domain.post.Post;
 import lombok.Getter;
 
 import java.time.LocalDateTime;

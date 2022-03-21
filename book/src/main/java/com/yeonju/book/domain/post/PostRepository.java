@@ -1,4 +1,4 @@
-package com.yeonju.book.web.domain.post;
+package com.yeonju.book.domain.post;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

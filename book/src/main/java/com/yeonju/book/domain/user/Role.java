@@ -1,4 +1,4 @@
-package com.yeonju.book.web.domain.user;
+package com.yeonju.book.domain.user;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

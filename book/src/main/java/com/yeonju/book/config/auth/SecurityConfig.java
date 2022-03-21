@@ -1,6 +1,6 @@
 package com.yeonju.book.config.auth;
 
-import com.yeonju.book.web.domain.user.Role;
+import com.yeonju.book.domain.user.Role;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;

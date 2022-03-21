@@ -1,7 +1,7 @@
 package com.yeonju.book.config.auth.dto;
 
-import com.yeonju.book.web.domain.user.Role;
-import com.yeonju.book.web.domain.user.User;
+import com.yeonju.book.domain.user.Role;
+import com.yeonju.book.domain.user.User;
 import lombok.Builder;
 import lombok.Getter;
 
